@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5a9325; /* Light gray background color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            color: #fff; /* Font color for text */
+        }
+
+        .confirmation-photo {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-message {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <img class="confirmation-photo" src="tea party background.png" alt="Order Confirmation">
+    <div class="confirmation-message">
+        <p>THANK YOU! YOU CAN NOW TAKE YOUR ORDER. ENJOY.</p>
+    </div>
+    <button class="confirmation-button" onclick="alert('OK clicked!')">OK</button>
+</body>
+</html>

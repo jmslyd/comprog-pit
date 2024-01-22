@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5a9325; /* Light gray background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .profile-container {
+            display: flex;
+            width: 100vw;
+            background-color: #5a9325;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .profile-details {
+            flex: 1;
+            padding: 20px;
+            color: #fff; /* Font color for profile details */
+        }
+
+        .profile-details h2 {
+            margin-bottom: 20px;
+            font-size: 3em; /* Larger font size for the heading */
+        }
+
+        .profile-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .profile-details li {
+            margin-bottom: 10px;
+            font-size: 2.5em; /* Larger font size for list items */
+        }
+
+        .profile-photo {
+            flex: 1;
+            text-align: center;
+            background-color: #5a9325; /* Placeholder color for the photo area */
+            padding: 20px;
+        }
+
+        .profile-photo img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .proceed-button {
+            width: 120px;
+            height: 60px;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-details">
+            <h2>Your Profile</h2>
+            <ul>
+                <li><strong>First Name:</strong>_________________________</li>
+                <li><strong>Last Name:</strong> _________________________</li>
+                <li><strong>Birthday:</strong> ___________________________</li>
+                <li><strong>Phone Number:</strong> ______________________</li>
+                <li><strong>Email Address:</strong> ______________________</li>
+                <li><strong>Address:</strong> ____________________________</li>
+            </ul>
+        </div>
+        <div class="profile-photo">
+            <img src="11.jpg" alt="Profile Photo">
+        </div>
+    </div>
+    <button class="proceed-button">Click here to proceed</button>
+</body>
+</html>

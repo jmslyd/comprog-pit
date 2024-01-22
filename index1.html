@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5a9325; /* Yellow-Green Background Color */
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start; /* Align items at the top */
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .square {
+            position: relative;
+            margin-right: 10px;
+            margin-top: 50px; /* Adjust the margin to move the image up */
+        }
+
+        .square img {
+            width: 600px;
+            height: 600px;
+            border-radius: 8px; /* Optional: Add rounded corners */
+            object-fit: cover; /* Maintain image aspect ratio */
+        }
+
+        .shop-info {
+            position: absolute;
+            bottom: -20px; /* Adjust the bottom value to move the text lower */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center; /* Align the text in the center */
+            color: #fff;
+        }
+
+        h1, h3 {
+            margin: 0;
+        }
+
+        button {
+            margin-top: 20px; /* Adjust the margin to move the button to the bottom */
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square">
+            <img src="cut2.jpg" alt="Shop Image">
+            <div class="shop-info">
+                <h1>Tea Party</h1>
+                <h3>Enjoy the Goodness in Every Cup.</h3>
+                <button>Log In</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5a9325; /* Light gray background color */
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .left-section img {
+            max-width: 125%;
+            height: auto;
+            border-radius: 8px;
+            
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 100px;
+        }
+
+        .right-section img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bottom-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            bottom: 300px;
+            right: 400px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 200px; /* Set a specific width for all buttons */
+            height: 50px; /* Set a specific height for all buttons */
+            padding: 10px; /* Adjusted padding for consistent button sizes */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .google {
+            background-color: #4285F4;
+            color: #fff;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+            color: #fff;
+        }
+
+        .instagram {
+            background-color: #e4405f;
+            color: #fff;
+        }
+
+        .apple {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="cut2.jpg" alt="Left Image">
+        </div>
+        <div class="right-section">
+            <img src="tea party background.png" alt="Rectangle Image">
+        </div>
+        <div class="bottom-buttons">
+            <button class="google">Continue with Google</button>
+            <button class="facebook">Continue with Facebook</button>
+            <button class="instagram">Continue with Instagram</button>
+            <button class="apple">Continue with Apple</button>
+        </div>
+    </div>
+</body>
+</html>

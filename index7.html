@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5a9325;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .back-button,
+        .view-cart-button {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .product-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: 35px 0;
+        }
+
+        .product-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 45%;
+            margin-right: 45px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 45px;
+        }
+
+        .product-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35%; /* Added width property */
+            margin-top: 10px; /* Added margin-top property */
+        }
+
+        .product-buttons button,
+        .add-to-cart-button {
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 15px;
+            width: 100%;
+        }
+
+        .product-buttons button {
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        .product-buttons-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 45%;
+        }
+
+        .size-buttons,
+        .addons-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .size-buttons button,
+        .addons-buttons button {
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-buttons">
+        <button class="back-button">Back</button>
+        <button class="view-cart-button">View Cart</button>
+    </div>
+
+    <div class="product-section">
+        <div class="product-container">
+            <img class="product-image" src="combo A.jpg" alt="Product Image">
+
+            <div class="product-buttons">
+                <button>-</button>
+                <button>0</button>
+                <button>+</button>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-buttons-right">
+            <div class="size-buttons">
+                <button class="size-button">LARGE</button>
+                <button class="size-button">MEDIUM</button>
+                <button class="size-button">SMALL</button>
+            </div>
+
+            <div class="addons-buttons">
+                <button class="addons-button">ADD ON A</button>
+                <button class="addons-button">ADD ON B</button>
+                <button class="addons-button">ADD ON C</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
